@@ -1,0 +1,7 @@
+# Versao INGENUA, so para comparar tamanho e shutdown.
+FROM mcr.microsoft.com/dotnet/sdk:10.0
+WORKDIR /app
+COPY . .
+RUN dotnet publish src/Pedidos/Pedidos.csproj -c Release -o out
+ENV ASPNETCORE_URLS=http://+:8080
+ENTRYPOINT dotnet out/Pedidos.dll

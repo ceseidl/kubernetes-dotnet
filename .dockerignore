@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+.git/
+.vs/
+k8s/
+tests/
+scripts/
+*.md

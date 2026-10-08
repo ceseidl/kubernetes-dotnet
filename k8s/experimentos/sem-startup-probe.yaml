@@ -1,0 +1,9 @@
+# Remove a startupProbe e usa so initialDelaySeconds (o erro).
+spec:
+  template:
+    spec:
+      containers:
+        - name: pedidos
+          startupProbe: null
+          livenessProbe:
+            initialDelaySeconds: 5

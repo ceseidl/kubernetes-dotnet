@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pedidos-config
+data:
+  ASPNETCORE_ENVIRONMENT: Development
+  Admin__Habilitado: "true"

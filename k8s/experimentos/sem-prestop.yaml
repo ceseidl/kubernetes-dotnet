@@ -1,0 +1,10 @@
+# Remove o preStop; a drenagem do app e zerada por variavel.
+spec:
+  template:
+    spec:
+      containers:
+        - name: pedidos
+          lifecycle: null
+          env:
+            - name: Shutdown__DrenagemSegundos
+              value: "0"
